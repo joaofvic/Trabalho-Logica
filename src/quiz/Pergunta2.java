@@ -5,6 +5,8 @@
  */
 package quiz;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Aluno
@@ -160,10 +162,12 @@ public class Pergunta2 extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        if(jRadioButton3.isSelected()){
+        if(jRadioButton4.isSelected()){
             dispose();
         }
         else{
+            JOptionPane.showMessageDialog(null, "Você perdeu :c \n E obteve uma pontuação de 250 pontos");
+            
             dispose();
             new Tela().setVisible(true);
         }

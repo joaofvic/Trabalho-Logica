@@ -11,14 +11,13 @@ import javax.swing.JOptionPane;
  *
  * @author Aluno
  */
-public class Pergunta1 extends javax.swing.JFrame {
+public class Pergunta3 extends javax.swing.JFrame {
 
     /**
-     * Creates new form Pergunta1
+     * Creates new form Pergunta3
      */
-    public Pergunta1() {
+    public Pergunta3() {
         initComponents();
-        setLocationRelativeTo(this);
     }
 
     /**
@@ -30,7 +29,6 @@ public class Pergunta1 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        buttonGroup1 = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jRadioButton1 = new javax.swing.JRadioButton();
@@ -51,25 +49,21 @@ public class Pergunta1 extends javax.swing.JFrame {
         jLabel1.setText("O que significa HTML?");
 
         jRadioButton1.setBackground(new java.awt.Color(0, 154, 205));
-        buttonGroup1.add(jRadioButton1);
         jRadioButton1.setFont(new java.awt.Font("MV Boli", 0, 24)); // NOI18N
         jRadioButton1.setForeground(new java.awt.Color(255, 255, 255));
         jRadioButton1.setText("Linguagem de marcação de hipertexto");
 
         jRadioButton2.setBackground(new java.awt.Color(0, 154, 205));
-        buttonGroup1.add(jRadioButton2);
         jRadioButton2.setFont(new java.awt.Font("MV Boli", 0, 24)); // NOI18N
         jRadioButton2.setForeground(new java.awt.Color(255, 255, 255));
         jRadioButton2.setText("Hiperlinks e linguagem de marcação de texto");
 
         jRadioButton3.setBackground(new java.awt.Color(0, 154, 205));
-        buttonGroup1.add(jRadioButton3);
         jRadioButton3.setFont(new java.awt.Font("MV Boli", 0, 24)); // NOI18N
         jRadioButton3.setForeground(new java.awt.Color(255, 255, 255));
         jRadioButton3.setText("Linguagem de marcação da ferramenta doméstica ");
 
         jRadioButton4.setBackground(new java.awt.Color(0, 154, 205));
-        buttonGroup1.add(jRadioButton4);
         jRadioButton4.setFont(new java.awt.Font("MV Boli", 0, 24)); // NOI18N
         jRadioButton4.setForeground(new java.awt.Color(255, 255, 255));
         jRadioButton4.setText("N.D.A");
@@ -117,7 +111,7 @@ public class Pergunta1 extends javax.swing.JFrame {
                             .addComponent(jRadioButton3)
                             .addComponent(jRadioButton2)
                             .addComponent(jRadioButton1))
-                        .addGap(0, 10, Short.MAX_VALUE))))
+                        .addGap(0, 0, Short.MAX_VALUE))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -157,9 +151,13 @@ public class Pergunta1 extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jRadioButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton4ActionPerformed
+
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        
+
         if(jRadioButton1.isSelected()){
             dispose();
             new Pergunta2().setVisible(true);
@@ -169,12 +167,8 @@ public class Pergunta1 extends javax.swing.JFrame {
             dispose();
             new Tela().setVisible(true);
         }
-        
-    }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void jRadioButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton4ActionPerformed
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -193,26 +187,25 @@ public class Pergunta1 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Pergunta1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Pergunta3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Pergunta1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Pergunta3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Pergunta1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Pergunta3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Pergunta1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Pergunta3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Pergunta1().setVisible(true);
+                new Pergunta3().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
